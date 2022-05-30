@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="dist/css/style.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- Animate on Scroll Js -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Typed.Js -->
+    <script src="dist/js/typed.min.js"></script>
     <title>Portofolio Tailwind CSS</title>
 </head>
 
@@ -15,7 +21,7 @@
     <!-- Header Section Start -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container mx-auto">
-            <div class="flex items-center justify-between relative">
+            <div class="flex items-center justify-between relative" data-aos="fade-down" >
                 <div class="px-4">
                     <a href="#home" class="font-bold text-lg lg:text-2xl block py-6"><span class="text-primary">Adit</span>ya</a>
                 </div>
@@ -28,7 +34,7 @@
                     </button>
 
                     <!-- Navigation Menu -->
-                    <nav class="hidden lg:block absolute lg:static  py-5 bg-white lg:bg-transparent shadow-lg lg:shadow-none rounded lg:rounded-none max-w-[250px] lg:max-w-full w-full right-4 top-full" id="nav-menu">
+                    <nav class="hidden lg:block absolute lg:static  py-5 bg-white lg:bg-transparent shadow-lg lg:shadow-none rounded lg:rounded-none max-w-[250px] lg:max-w-full w -full right-4 top-full" id="nav-menu">
                         <ul class="block lg:flex">
                             <li class="group">
                                 <a href="#home" class="text-base text-dark py-2 px-8 group-hover:text-primary flex lg:font-medium">Home</a>
@@ -61,39 +67,31 @@
         <div class="container mx-auto">
             <div class="flex flex-wrap sm:px-2 lg:px-8">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="mb-1 text-base sm:text-lg xl:text-2xl font-semibold text-primary">Hello 👋</h1>
-                    <h2 class="mb-3 text-4xl sm:text-5xl xl:text-7xl text-dark font-bold">I'm <span
-                            class="text-primary">Aditya
-                            Wahyu</span>
-                    </h2>
-                    <h3 class="mb-3 text-lg sm:text-xl xl:text-2xl font-semibold text-slate-700">Full Stack Developer,
-                        UI/UX
-                        Designer</h3>
-                    <p class="mb-8 sm:mb-10  font-normal text-sm sm:text-lg lg:text-base xl:text-lg text-slate-500">I have
-                        starting my career
-                        in Web
-                        Programming
-                        since 2022
-                        and
-                        I've work with
-                        different
-                        Client in different countries. I've been using many of Web Technology, including Bootstrap,
-                        SASS, TailwindCSS, Laravel etc. Interest to work with me?
+                    <div id="typed-strings">
+                        <p>Hello 👋</p>
+                        <p>Nice <span class="text-dark">to</span> Meet <span class="text-dark">You!</span></p>
+                    </div>
+                    <h1 data-aos="fade-right" data-aos-duration="500" class="mb-1 text-base sm:text-lg xl:text-2xl font-semibold text-primary"><span id="typed"></span></h1>
+                    <h2 data-aos="fade-right" data-aos-duration="600" class="mb-3 text-4xl sm:text-5xl xl:text-7xl text-dark font-bold">I'm <span class="text-primary">Aditya Wahyu</span></h2>
+                    <h3 data-aos="fade-right" data-aos-duration="700" class="mb-3 text-lg sm:text-xl xl:text-2xl font-semibold text-slate-700">Full Stack Developer, UI/UX Designer</h3>
+                    <p data-aos="fade-right" data-aos-duration="800" class="mb-8 sm:mb-10  font-normal text-sm sm:text-lg lg:text-base xl:text-lg text-slate-500">I have starting my career in Web Programming since 2022 and I've work with different Client in different countries. I've been using many of Web Technology, including Bootstrap, SASS, TailwindCSS, Laravel etc. Interest to work with me?
                     </p>
-                    <a href="#"
-                        class="text-sm sm:text-base font-semibold px-8 py-3 bg-primary rounded-full text-white hover:opacity-90 hover:shadow-md hover:shadow-emerald-200 active:opacity-80">Contact
-                        Me</a>
+                    <div data-aos="fade-right" data-aos-duration="900" class="">
+                        <a href="#"
+                            class="text-sm sm:text-base font-semibold px-8 py-3 bg-primary rounded-full text-white hover:opacity-90 hover:shadow-md hover:shadow-emerald-200 active:opacity-80">Contact
+                            Me</a>
+                    </div>
                 </div>
 
                 <div class="w-full px-4 lg:w-1/2 mt-12 sm:mt-16 lg:mt-0">
-                    <div class="relative  sm:w-3/4 lg:w-full xl:w-[80%] mx-auto">
+                    <div data-aos="zoom-in" class="relative  sm:w-3/4 lg:w-full xl:w-[80%] mx-auto">
                         <img src="dist/img/profile.png" alt="profile-picture" class="max-w-full mx-auto">
                         <svg class="absolute top-10 left-1/2 -translate-x-1/2 scale-[2] -z-10" viewBox="0 0 200 200"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill="#14B8A6"
                                 d="M57,-61.5C72.7,-54.8,83.3,-35.7,84.4,-16.8C85.4,2.1,76.8,20.7,64.6,33C52.4,45.2,36.5,51.1,22,53.3C7.4,55.6,-5.9,54.2,-18.4,49.9C-31,45.7,-42.8,38.6,-55.1,27.1C-67.4,15.5,-80.2,-0.4,-77.7,-13.5C-75.1,-26.5,-57.2,-36.7,-41.7,-43.4C-26.2,-50.1,-13.1,-53.5,3.8,-58C20.7,-62.5,41.3,-68.2,57,-61.5Z"
                                 transform="translate(100 100)" />
-                        </svg>
+                        </svg>                        
                     </div>
 
                 </div>
@@ -104,17 +102,17 @@
     <!-- About Section Start -->
     <section class="mt-24 lg:mt-36 mb-36" id="about">
         <div class="container mx-auto">
-            <div class="sm:px-2 lg:px-8">
+            <div data-aos="fade-right" data-aos-duration="400" class="sm:px-2 lg:px-8">
                 <h4 class="px-4 font-semibold text-primary text-lg lg:text-xl mb-3">About Me</h4>
             </div>
             <div class="flex flex-wrap sm:px-2 lg:px-8">
-                <div class="w-full px-4 mb-8 lg:mb-0 lg:w-1/2">
+                <div data-aos="fade-right" data-aos-duration="500" class="w-full px-4 mb-8 lg:mb-0 lg:w-1/2">
                     <h2 class="font-bold text-dark text-2xl lg:text-3xl mb-3 ">Let's Learn Web Programming with Me!</h2>
                     <p class="font-normal text-sm sm:text-base text-secondary text-slate-500">How about learn web programming together with me? I'm planning to make youtube channel
                         that will contain amateur Web Programming tutorial, such as HTML, CSS, Javascript, etc.</p>
                 </div>
 
-                <div class="w-full px-4 lg:w-1/2">
+                <div data-aos="fade-left" data-aos-duration="500" class="w-full px-4 lg:w-1/2">
                     <h3 class="font-semibold text-dark text-xl lg:text-2xl mb-3 ">Let's be Friend</h3>
                     <p class="font-normal text-sm sm:text-base text-slate-500">May be we can be a Friend? haha. You can find me in the several social media below. See you on my socials and don't
                         forget to contact me hehe.</p>
@@ -380,7 +378,7 @@
             </div>
 
             <div class="w-full pt-3 border-t border-slate-700">
-                <div class="flex justify-center items-center my-3">
+                <div class="flex justify-center items-center mt-3 mb-5">
                     <!-- Youtube -->
                     <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                         <svg role="img" class="fill-current" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
@@ -399,13 +397,21 @@
                         <svg role="img" class="fill-current" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
                     </a>
                 </div>
-                <p class="text-slate-400 text-sm text-center my-3">Made with <span class="text-pink-700">❤</span> by <span class="font-medium text-primary"><a href="https://instagram.com/adityaa.wr" target="_blank" >Aditya Wahyu</a></span> using <span class="text-sky-500 font-medium"><a href="https://tailwindcss.com/" target="_blank" >TailwindCSS</a></span></p>
+                <p class="text-slate-400 text-xs text-center my-3">Made with <span class="text-pink-700">❤</span> by <span class="font-medium text-primary"><a href="https://instagram.com/adityaa.wr" target="_blank" >Aditya Wahyu</a></span> using <span class="text-sky-500 font-medium"><a href="https://tailwindcss.com/" target="_blank" >TailwindCSS</a></span></p>
             </div>
         </div>
     </footer>
     <!-- Footer Section End -->
     
+    <!-- Main Script -->
     <script src="dist/js/script.js"></script>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+      });
+    </script>
 </body>
 
 </html>

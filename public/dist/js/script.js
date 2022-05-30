@@ -17,3 +17,12 @@ hamburgerMenu.addEventListener('click', function () {
     hamburgerMenu.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
 });
+
+// Typed.Js
+var typed = new Typed('#typed', {
+    // strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+    stringsElement: '#typed-strings',
+    typeSpeed: 80,
+    backDelay: 1000,
+    loop: true,
+});
