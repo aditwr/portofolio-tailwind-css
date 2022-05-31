@@ -26,12 +26,12 @@ hamburgerMenu.addEventListener('click', function () {
 });
 
 // Click outside hamburger to close it
-window.addEventListener('click', function (event) {
-    if ((event.target != hamburgerMenu) && (event.target != navMenu)) {
-        navMenu.classList.add('hidden');
-        hamburgerMenu.classList.remove('hamburger-active');
-    }
-})
+// window.addEventListener('click', function (event) {
+//     if ((event.target != hamburgerMenu) && (event.target != navMenu)) {
+//         navMenu.classList.add('hidden');
+//         hamburgerMenu.classList.remove('hamburger-active');
+//     }
+// })
 
 
 // Typed.Js
@@ -43,4 +43,15 @@ var typed = new Typed('#typed', {
     loop: true,
 });
 
+// Dark Mode Toggle 
+const darkToggle = document.querySelector('#dark-toggle');
+const html = document.querySelector('html');
 
+darkToggle.addEventListener('click', function () {
+    if (darkToggle.checked) {
+        html.classList.add('dark');
+    }
+    else {
+        html.classList.remove('dark');
+    }
+})
